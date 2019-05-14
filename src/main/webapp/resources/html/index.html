@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+    <link rel="stylesheet" href="webjars/bootstrap/4.3.1/css/bootstrap.css">
+    <link rel="stylesheet" href="/resources/css/index.css">
+    <script src="webjars/bootstrap/4.3.1/js/bootstrap.js"></script>
+    <script src="/resources/js/index.js"></script>
+</head>
+<body>
+<div id="index" >
+    <center>
+        <h1>Hungarian Algorithm</h1>
+    <form id="hungarianForm">
+        <div class="i-am-centered row">
+            <div class="col-auto">
+                <label class="mr-sm-2" for="inlineFormCustomSelect">Rows count</label>
+                <select name="rowCount" class="custom-select mr-sm-2" id="inlineFormRowSelect" onchange="changeRows()">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                </select>
+            </div>
+            <div class="col-auto">
+                <label class="mr-sm-2" for="inlineFormCustomSelect">Columns count</label>
+                <select name="columnCount" class="custom-select mr-sm-2" id="inlineFormColumnSelect" onchange="changeColumns()">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="i-am-centered">
+            <div class="row">
+                <input name="input11" id="input11" class="col-auto input" type="text">
+                <input name="input12" id="input12" class="col-auto input" type="text">
+                <input name="input13" id="input13" class="col-auto input" type="text">
+                <input name="input14" id="input14" class="col-auto input" type="text">
+                <input name="input15" id="input15" class="col-auto input" type="text">
+            </div>
+            <br>
+            <div class="row">
+                <input name="input21" id="input21" class="col-auto input" type="text">
+                <input name="input22" id="input22" class="col-auto input" type="text">
+                <input name="input23" id="input23" class="col-auto input" type="text">
+                <input name="input24" id="input24" class="col-auto input" type="text">
+                <input name="input25" id="input25" class="col-auto input" type="text">
+            </div>
+            <br>
+            <div class="row">
+                <input name="input31" id="input31" class="col-auto input" type="text">
+                <input name="input32" id="input32" class="col-auto input" type="text">
+                <input name="input33" id="input33" class="col-auto input" type="text">
+                <input name="input34" id="input34" class="col-auto input" type="text">
+                <input name="input35" id="input35" class="col-auto input" type="text">
+            </div>
+            <br>
+            <div class="row">
+                <input name="input41" id="input41" class="col-auto input" type="text">
+                <input name="input42" id="input42" class="col-auto input" type="text">
+                <input name="input43" id="input43" class="col-auto input" type="text">
+                <input name="input44" id="input44" class="col-auto input" type="text">
+                <input name="input45" id="input45" class="col-auto input" type="text">
+            </div>
+            <br>
+            <div class="row">
+                <input name="input51" id="input51" class="col-auto input" type="text">
+                <input name="input52" id="input52" class="col-auto input" type="text">
+                <input name="input53" id="input53" class="col-auto input" type="text">
+                <input name="input54" id="input54" class="col-auto input" type="text">
+                <input name="input55" id="input55" class="col-auto input" type="text">
+            </div>
+        </div>
+        <br>
+        <label>Solution way</label>
+        <select name="solveWay" id="formSolveWay">
+            <option selected>Choose...</option>
+            <option value="min">min</option>
+            <option value="max">max</option>
+        </select>
+        <br>
+        <label>Rezult</label>
+        <input type="text" id="rezultField" style="width: available" readonly="readonly">
+        <br>
+        <label>Sum</label>
+        <input type="text" id="sum" readonly="readonly" >
+        <br>
+        <input type="button" onclick="calculate()" value="submit">
+    </form>
+    </center>
+</div>
+</body>
+</html>
